@@ -3,30 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nishaan — Handmade Punjabi Keepsakes</title>
+<title>Layered Roots — Rooted in Heritage. Crafted with Purpose.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Mukta+Mahee:wght@400;700&family=Noto+Sans+Gurmukhi:wght@400;600;700&family=Noto+Serif+Gurmukhi:wght@400;600;700&family=Tiro+Gurmukhi:ital@0;1&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --bg:#FAFAF7;
-    --bg-alt:#F2F0EB;
-    --card:#FFFFFF;
-    --text:#1A1F2E;
-    --text-soft:#5A6070;
-    --text-muted:#9AA0AE;
-    --orange:#D97706;
-    --orange-light:#F59E0B;
-    --orange-soft:rgba(217,119,6,0.08);
-    --orange-glow:rgba(217,119,6,0.15);
-    --border:#E5E5E0;
-    --border-hover:#D97706;
-    --radius:8px;
-    --radius-lg:16px;
-    --shadow-sm:0 1px 3px rgba(0,0,0,0.04);
-    --shadow-md:0 4px 12px rgba(0,0,0,0.06);
-    --shadow-lg:0 12px 40px rgba(0,0,0,0.1);
-    --max-w:1200px;
-  }
+  :root{--bg:#FAFAF7;--bg-alt:#F2F0EB;--card:#FFFFFF;--text:#1A1F2E;--text-soft:#5A6070;--text-muted:#9AA0AE;--orange:#D97706;--orange-light:#F59E0B;--orange-soft:rgba(217,119,6,0.08);--orange-glow:rgba(217,119,6,0.15);--border:#E5E5E0;--radius:8px;--radius-lg:16px;--shadow-sm:0 1px 3px rgba(0,0,0,0.04);--shadow-md:0 4px 12px rgba(0,0,0,0.06);--shadow-lg:0 12px 40px rgba(0,0,0,0.1);--max-w:1200px}
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
   body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.6}
@@ -34,20 +15,17 @@
   a{color:inherit;text-decoration:none}
   img{display:block;max-width:100%}
   button{font-family:inherit;cursor:pointer}
-
   .wrap{max-width:var(--max-w);margin:0 auto;padding:0 32px}
   @media(max-width:640px){.wrap{padding:0 16px}}
 
-  /* ======================== NAV ======================== */
   .topnav{padding:20px 0;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50;background:rgba(250,250,247,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
-  .topnav-logo{font-family:'Fraunces',serif;font-weight:700;font-size:20px;letter-spacing:-0.02em}
-  .topnav-logo span{color:var(--orange)}
+  .topnav-logo{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:700;font-size:20px;letter-spacing:-0.02em}
+  .topnav-logo img{height:36px;width:auto}
   .topnav-links{display:flex;gap:28px;font-size:13px;font-weight:500;color:var(--text-soft)}
   .topnav-links a{transition:color .2s}
   .topnav-links a:hover{color:var(--orange)}
   @media(max-width:640px){.topnav-links{gap:16px;font-size:12px}}
 
-  /* ======================== HERO ======================== */
   .hero{text-align:center;padding:80px 0 60px;position:relative;overflow:hidden}
   .hero::before{content:'';position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:700px;height:700px;background:radial-gradient(circle,var(--orange-soft) 0%,transparent 70%);pointer-events:none}
   .hero .eyebrow{text-transform:uppercase;letter-spacing:0.2em;font-size:11px;font-weight:600;color:var(--orange);margin-bottom:20px;position:relative}
@@ -57,7 +35,6 @@
   .hero .btn-row{display:flex;gap:12px;justify-content:center;position:relative;flex-wrap:wrap}
   @media(max-width:640px){.hero{padding:60px 0 40px}}
 
-  /* ======================== BUTTONS ======================== */
   .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;font-size:14px;font-weight:600;border-radius:var(--radius);border:none;transition:all .2s ease}
   .btn-primary{background:var(--orange);color:#fff}
   .btn-primary:hover{background:var(--orange-light);box-shadow:0 4px 16px var(--orange-glow);transform:translateY(-1px)}
@@ -65,12 +42,10 @@
   .btn-outline:hover{border-color:var(--orange);color:var(--orange)}
   .btn-sm{padding:9px 18px;font-size:13px}
 
-  /* ======================== CATEGORY PILLS ======================== */
   .cat-nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:8px}
   .cat-pill{border:1.5px solid var(--border);padding:8px 20px;font-size:13px;font-weight:500;color:var(--text-soft);border-radius:40px;transition:all .2s;background:transparent}
   .cat-pill:hover{border-color:var(--orange);color:var(--orange);background:var(--orange-soft)}
 
-  /* ======================== CATALOG ======================== */
   .catalog{padding:20px 0 60px}
   .catalog-head{text-align:center;margin-bottom:48px}
   .catalog-head h2{font-size:clamp(28px,4vw,40px);margin-bottom:10px}
@@ -81,7 +56,6 @@
   .category-heading h3{font-size:22px}
   .category-heading .count{font-size:12px;color:var(--text-muted);font-weight:500;background:var(--bg-alt);padding:4px 10px;border-radius:20px}
 
-  /* ======================== GRID / CARDS ======================== */
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:540px){.grid{grid-template-columns:1fr}}
@@ -100,7 +74,9 @@
   .card-foot .price{font-family:'Fraunces',serif;color:var(--orange);font-weight:600;font-size:16px}
   .card-foot .num{font-size:12px;color:var(--text-muted);font-weight:500}
 
-  /* ======================== PRODUCT PAGE ======================== */
+  .view{display:none}
+  .view.active{display:block}
+
   .product-page{padding:40px 0 100px}
   .back-link{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--text-soft);margin-bottom:32px;transition:color .2s}
   .back-link:hover{color:var(--orange)}
@@ -148,12 +124,18 @@
   .radio-chip.checked{border-color:var(--orange);color:var(--orange);background:var(--orange-soft);font-weight:500}
 
   .swatch-row{display:flex;gap:8px;flex-wrap:wrap}
-  .swatch-chip{display:flex;align-items:center;gap:10px;border:1.5px solid var(--border);padding:8px 16px 8px 8px;font-size:13px;cursor:pointer;user-select:none;color:var(--text-soft);border-radius:var(--radius);transition:all .2s;background:var(--card)}
-  .swatch-chip:hover{border-color:var(--orange)}
+  .swatch-chip{
+    display:inline-flex;align-items:center;gap:10px;
+    border:2px solid var(--border);border-radius:40px;
+    padding:6px 16px 6px 6px;cursor:pointer;user-select:none;
+    color:var(--text-soft);font-size:13px;font-weight:500;
+    transition:all .2s;background:var(--card);white-space:nowrap;
+  }
+  .swatch-chip:hover{border-color:var(--orange);transform:translateY(-1px)}
   .swatch-chip input{display:none}
-  .swatch-chip .dot{width:24px;height:24px;border-radius:50%;border:2px solid rgba(0,0,0,0.08);flex-shrink:0;transition:box-shadow .2s}
-  .swatch-chip.checked{border-color:var(--orange);color:var(--orange);background:var(--orange-soft);font-weight:500}
-  .swatch-chip.checked .dot{box-shadow:0 0 0 2px var(--card),0 0 0 4px var(--orange)}
+  .swatch-chip .dot{width:28px;height:28px;border-radius:50%;border:2px solid rgba(0,0,0,0.08);flex-shrink:0;transition:box-shadow .2s}
+  .swatch-chip.checked{border-color:var(--orange);color:var(--orange);background:var(--orange-soft);font-weight:600}
+  .swatch-chip.checked .dot{box-shadow:0 0 0 2px var(--card),0 0 0 3px var(--orange)}
 
   .note-box{border:1.5px dashed var(--border);padding:14px 16px;font-size:13px;color:var(--text-soft);border-radius:var(--radius);background:var(--bg-alt)}
 
@@ -167,36 +149,40 @@
   @media(max-width:480px){.summary-actions{flex-direction:column}.summary-actions .btn{width:100%}}
   .copied-msg{font-size:13px;color:var(--orange);margin-top:10px;display:none;font-weight:500}
 
-  /* ======================== FOOTER ======================== */
   footer{text-align:center;padding:40px 0;border-top:1px solid var(--border);color:var(--text-muted);font-size:13px}
 
-  /* ======================== LIGHTBOX ======================== */
+  .about{padding:80px 0;border-top:1px solid var(--border)}
+  .about-inner{max-width:720px;margin:0 auto;text-align:center}
+  .about-logo{height:400px;width:auto;margin:0 auto 28px;display:block;opacity:0.85}
+  .about h2{font-size:clamp(28px,4vw,40px);margin-bottom:28px}
+  .about h2 em{font-style:normal;color:var(--orange)}
+  .about p{color:var(--text-soft);font-size:16px;line-height:1.75;margin-bottom:20px}
+  .about .tagline{font-family:'Fraunces',serif;font-size:18px;color:var(--text);font-weight:600;margin-top:36px;padding-top:28px;border-top:1px solid var(--border);font-style:italic}
+  .about-story{margin-top:64px;padding-top:48px;border-top:1px solid var(--border)}
+  .about-story h3{font-size:clamp(22px,3vw,30px);margin-bottom:20px}
+  .about-contact{margin-top:64px;padding-top:48px;border-top:1px solid var(--border)}
+  .about-contact h3{font-size:clamp(22px,3vw,30px);margin-bottom:20px}
+  .contact-grid{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+  .contact-card{display:flex;align-items:center;gap:14px;border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:18px 24px;background:var(--card);transition:all .2s;text-decoration:none;color:var(--text)}
+  .contact-card:hover{border-color:var(--orange);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+  .contact-card .contact-icon{width:40px;height:40px;border-radius:50%;background:var(--orange-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .contact-card .contact-icon svg{width:18px;height:18px;color:var(--orange)}
+  .contact-card .contact-text{display:flex;flex-direction:column;gap:2px}
+  .contact-card .contact-label{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);font-weight:600}
+  .contact-card .contact-value{font-size:15px;font-weight:600;color:var(--text)}
+  @media(max-width:640px){.about{padding:48px 0}.contact-grid{flex-direction:column;align-items:center}}
+
   .lightbox{position:fixed;inset:0;z-index:200;background:rgba(26,31,46,0.92);display:none;align-items:center;justify-content:center;padding:40px;cursor:zoom-out;backdrop-filter:blur(8px)}
   .lightbox.active{display:flex}
   .lightbox img{max-width:90%;max-height:90%;object-fit:contain;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg)}
   .lightbox-close{position:absolute;top:24px;right:28px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fff;width:40px;height:40px;border-radius:50%;font-size:20px;display:flex;align-items:center;justify-content:center;transition:all .2s}
   .lightbox-close:hover{background:rgba(255,255,255,0.2);border-color:var(--orange);color:var(--orange)}
 
-  /* ======================== VIEWS ======================== */
-  .view{display:none}
-  .view.active{display:block}
-
-  /* ======================== ANIMATIONS ======================== */
   @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
   .hero .eyebrow,.hero h1,.hero p,.hero .btn-row,.hero .cat-nav{animation:fadeUp .6s ease both}
-  .hero h1{animation-delay:.1s}
-  .hero p{animation-delay:.2s}
-  .hero .btn-row{animation-delay:.3s}
-  .hero .cat-nav{animation-delay:.4s}
+  .hero h1{animation-delay:.1s}.hero p{animation-delay:.2s}.hero .btn-row{animation-delay:.3s}.hero .cat-nav{animation-delay:.4s}
 
-  /* ======================== PUNJABI KEYBOARD ======================== */
-  .text-preview-box{
-    border:1.5px solid var(--border);border-radius:var(--radius-lg);
-    padding:24px 20px;margin-bottom:16px;
-    background:var(--bg-alt);text-align:center;
-    min-height:80px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
-    transition:border-color .2s;
-  }
+  .text-preview-box{border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:24px 20px;margin-bottom:16px;background:var(--bg-alt);text-align:center;min-height:80px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;transition:border-color .2s}
   .text-preview-box.has-text{border-color:var(--orange)}
   .text-preview-label{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);font-weight:600}
   .text-preview-value{font-size:28px;line-height:1.3;color:var(--text);word-break:break-word;min-height:36px}
@@ -205,12 +191,7 @@
   .font-selector{margin-bottom:16px}
   .font-selector label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);margin-bottom:8px;font-weight:600}
   .font-options{display:flex;gap:8px;flex-wrap:wrap}
-  .font-chip{
-    border:1.5px solid var(--border);padding:10px 18px;font-size:14px;
-    cursor:pointer;user-select:none;color:var(--text-soft);
-    border-radius:var(--radius);transition:all .2s;background:var(--card);
-    display:flex;flex-direction:column;align-items:center;gap:4px;min-width:100px;
-  }
+  .font-chip{border:1.5px solid var(--border);padding:10px 18px;font-size:14px;cursor:pointer;user-select:none;color:var(--text-soft);border-radius:var(--radius);transition:all .2s;background:var(--card);display:flex;flex-direction:column;align-items:center;gap:4px;min-width:100px}
   .font-chip:hover{border-color:var(--orange)}
   .font-chip input{display:none}
   .font-chip .font-sample{font-size:11px;color:var(--text-muted)}
@@ -219,30 +200,12 @@
   .punjabi-kb{margin-top:12px}
   .punjabi-kb-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
   .punjabi-kb-header span{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);font-weight:600}
-  .punjabi-kb-toggle{
-    font-size:12px;color:var(--orange);background:none;border:1.5px solid var(--orange);
-    padding:5px 12px;border-radius:var(--radius);cursor:pointer;font-weight:600;
-    transition:all .2s;
-  }
+  .punjabi-kb-toggle{font-size:12px;color:var(--orange);background:none;border:1.5px solid var(--orange);padding:5px 12px;border-radius:var(--radius);cursor:pointer;font-weight:600;transition:all .2s}
   .punjabi-kb-toggle:hover{background:var(--orange-soft)}
-  .punjabi-kb-grid{
-    display:none;
-    background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius-lg);
-    padding:12px;gap:4px;
-    grid-template-columns:repeat(auto-fill,minmax(38px,1fr));
-    max-height:260px;overflow-y:auto;
-  }
+  .punjabi-kb-grid{display:none;background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:12px;gap:4px;grid-template-columns:repeat(auto-fill,minmax(38px,1fr));max-height:260px;overflow-y:auto}
   .punjabi-kb-grid.open{display:grid}
-  .punjabi-kb-grid .kb-row-label{
-    grid-column:1/-1;font-size:10px;text-transform:uppercase;letter-spacing:.1em;
-    color:var(--text-muted);font-weight:600;padding:6px 4px 2px;border-bottom:1px solid var(--border);margin-bottom:2px;
-  }
-  .kb-key{
-    display:flex;align-items:center;justify-content:center;
-    background:var(--bg-alt);border:1px solid var(--border);border-radius:6px;
-    padding:8px 4px;font-size:18px;cursor:pointer;transition:all .12s;
-    user-select:none;line-height:1;
-  }
+  .punjabi-kb-grid .kb-row-label{grid-column:1/-1;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);font-weight:600;padding:6px 4px 2px;border-bottom:1px solid var(--border);margin-bottom:2px}
+  .kb-key{display:flex;align-items:center;justify-content:center;background:var(--bg-alt);border:1px solid var(--border);border-radius:6px;padding:8px 4px;font-size:18px;cursor:pointer;transition:all .12s;user-select:none;line-height:1}
   .kb-key:hover{background:var(--orange-soft);border-color:var(--orange);transform:scale(1.08)}
   .kb-key:active{transform:scale(0.95);background:var(--orange);color:#fff;border-color:var(--orange)}
   .kb-key.space{grid-column:span 3;font-size:12px;letter-spacing:.05em}
@@ -252,27 +215,25 @@
 </head>
 <body>
 
-<!-- ======================== NAV ======================== -->
 <nav class="topnav">
   <div class="wrap" style="width:100%;display:flex;align-items:center;justify-content:space-between">
-    <div class="topnav-logo">Nishaan<span>.</span></div>
+    <a href="#/" class="topnav-logo"><img src="logo.png" alt="Layered Roots">Layered Roots</a>
     <div class="topnav-links">
       <a href="#/" onclick="scrollTo({top:0,behavior:'smooth'})">Shop</a>
-      <a href="#about">About</a>
+      <a href="#/about">About</a>
     </div>
   </div>
 </nav>
 
-<!-- ===================== CATALOG VIEW ===================== -->
 <div id="catalog-view" class="view active">
   <section class="hero">
     <div class="wrap">
-      <div class="eyebrow">Made to order · In person</div>
-      <h1>Small keepsakes,<br><em>rooted in faith.</em></h1>
+      <div class="eyebrow">Rooted in heritage · Crafted with purpose</div>
+      <h1>Where culture<br><em>inspires creativity.</em></h1>
       <p>Handmade Punjabi & Sikh-inspired pieces. Pick a piece, personalize your colors, then message the order over.</p>
       <div class="btn-row">
         <a href="#catalog" class="btn btn-primary">Browse catalog</a>
-        <a href="#about" class="btn btn-outline">Learn more</a>
+        <a href="#/about" class="btn btn-outline">Learn more</a>
       </div>
       <nav class="cat-nav" id="cat-nav" style="margin-top:32px"></nav>
     </div>
@@ -282,14 +243,23 @@
     <div class="catalog-head">
       <h2>The catalog</h2>
       <p>Tap an item to personalize it and see the order summary.</p>
+      <div class="contact-grid" style="margin-top:20px">
+        <a href="tel:2343599861" class="contact-card">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div class="contact-text"><span class="contact-label">Text Us</span><span class="contact-value">234-359-9861</span></div>
+        </a>
+        <a href="mailto:harjassidhu440@gmail.com" class="contact-card">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+          <div class="contact-text"><span class="contact-label">Email Us</span><span class="contact-value">harjassidhu440@gmail.com</span></div>
+        </a>
+      </div>
     </div>
     <div id="catalog-sections"></div>
   </main>
 
-  <footer><div class="wrap">Handmade in Ohio · Every piece made to order</div></footer>
+  <footer><div class="wrap">Layered Roots · Handmade in Ohio · Every piece made to order</div></footer>
 </div>
 
-<!-- ===================== PRODUCT VIEW ===================== -->
 <div id="product-view" class="view">
   <div class="wrap product-page">
     <a href="#/" class="back-link">&larr; Back to catalog</a>
@@ -308,12 +278,10 @@
         <div class="category-tag" id="p-category">—</div>
         <h2 id="p-name">—</h2>
         <p class="desc" id="p-desc">—</p>
-
         <div class="options-card">
           <h4>Customize this order</h4>
           <form id="p-form"></form>
         </div>
-
         <div class="summary">
           <h4>Order summary</h4>
           <div id="p-summary"></div>
@@ -326,7 +294,44 @@
       </div>
     </div>
   </div>
-  <footer><div class="wrap">Handmade in Ohio · Every piece made to order</div></footer>
+  <footer><div class="wrap">Layered Roots · Handmade in Ohio · Every piece made to order</div></footer>
+</div>
+
+<div id="about-view" class="view">
+  <section class="about" style="padding-top:48px">
+    <div class="wrap">
+      <a href="#/" class="back-link">&larr; Back to shop</a>
+      <div class="about-inner">
+        <img src="logo.png" alt="Layered Roots" class="about-logo">
+        <h2 style="font-size:clamp(32px,5vw,48px)">About <em>Layered Roots</em></h2>
+        <p>At Layered Roots, we celebrate the beauty of heritage, the strength of community, and the stories that connect generations.</p>
+        <p>Inspired by Sikh values, Gurmukhi, and our shared traditions, we create meaningful products that help keep our roots alive in everyday life. Each piece is thoughtfully designed to inspire learning, preserve culture, and create connections.</p>
+        <p>From Gurmukhi learning tools and Sikh-inspired keepsakes to personalized creations made with love, our work is more than just a product — it is a way to celebrate identity, share knowledge, and pass our traditions forward.</p>
+        <p>By blending modern design with timeless values, Layered Roots brings heritage into homes, classrooms, and communities in new and creative ways.</p>
+        <div class="tagline">Rooted in heritage. Crafted with purpose. Created to inspire future generations.</div>
+        <div class="about-story">
+          <h3>Our Story</h3>
+          <p>Layered Roots was created from a simple idea: the things we surround ourselves with should have meaning.</p>
+          <p>We love turning ideas into lasting keepsakes — pieces that celebrate people, milestones, traditions, and everyday moments. Every order is made with care, one layer at a time, because we believe the little details matter.</p>
+          <p>Thank you for supporting a small business that creates with purpose. We're grateful to be part of your story.</p>
+        </div>
+        <div class="about-contact">
+          <h3>Get in Touch</h3>
+          <div class="contact-grid">
+            <a href="tel:2343599861" class="contact-card">
+              <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div class="contact-text"><span class="contact-label">Text Us</span><span class="contact-value">234-359-9861</span></div>
+            </a>
+            <a href="mailto:harjassidhu440@gmail.com" class="contact-card">
+              <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+              <div class="contact-text"><span class="contact-label">Email Us</span><span class="contact-value">harjassidhu440@gmail.com</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer><div class="wrap">Layered Roots · Handmade in Ohio · Every piece made to order</div></footer>
 </div>
 
 <div class="lightbox" id="lightbox">
@@ -335,9 +340,9 @@
 </div>
 
 <script>
-const COLORS=["Red","Orange","Yellow","Green","Blue","Purple","Pink","Black","White","Gold","Silver"];
-const COLOR_HEX={"Red":"#C0392B","Orange":"#E67E22","Yellow":"#F1C40F","Green":"#27AE60","Blue":"#2980B9","Purple":"#8E44AD","Pink":"#E38AAE","Black":"#1A1A1A","White":"#F5F5F0","Gold":"#C9A24B","Silver":"#BDC3C7"};
+const COLORS=["Red","Orange","Yellow","Green","Blue","Purple","Pink","Black","White","Gold"];
 
+  const COLOR_HEX={"Red":"#DC2626","Orange":"#EA580C","Yellow":"#CA8A04","Green":"#16A34A","Blue":"#2563EB","Purple":"#9333EA","Pink":"#EC4899","Black":"#1C1917","White":"#F5F5F4","Gold":"#D4A017"};
 const ICONS={
   bookmark:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 6h20v32l-10-7-10 7z"/><circle cx="24" cy="16" r="5"/><path d="M20 16h8M24 12v8"/></svg>`,
   sign:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="10" width="32" height="24" rx="2"/><circle cx="16" cy="18" r="2"/><circle cx="24" cy="18" r="2"/><circle cx="32" cy="18" r="2"/><circle cx="16" cy="26" r="2"/><circle cx="24" cy="26" r="2"/></svg>`,
@@ -351,89 +356,40 @@ const ICONS={
 };
 
 const IMAGES={
-  "khanda-bookmark":[
-    {src:"bigbookmarkmaindisp.PNG",label:"Front"},
-    {src:"backofbigwoodenbookmark.PNG",label:"Back",scale:55},
-    {src:"bigwoodkhandainbookopenbook.PNG",label:"In book, open",scale:65},
-    {src:"bookmarkwooodmaindispwiththedaygtaygfathe.PNG",label:"With Fateh text",scale:60},
-    {src:"woodbookmarkbigw_odaygtayfathe.PNG",label:"With Fateh text, alt",scale:55},
-    {src:"woodbigbookemarkwoodbaseblackkhanda.PNG",label:"Wood base, black khanda"},
-    {src:"yellowbigbookmarkbasewithblackkhandamaindisp.PNG",label:"Yellow base, black khanda",scale:58}
-  ],
-  "mini-bookmark":[
-    {src:"Minibookmarkmaindisp.PNG",label:"Front"},
-    {src:"bluebaseminibookmarkwithorangekhandaminidisppic.PNG",label:"Blue base, orange khanda",scale:55},
-    {src:"Bluebaseorangekhandabookmarkbookclosed.PNG",label:"Blue base — book closed"},
-    {src:"minibookmarkorangemaindisp.PNG",label:"Orange base",scale:55},
-    {src:"orangeminibookmarkwithyellowkhandaontable.PNG",label:"Orange base, yellow khanda",scale:55},
-    {src:"smallyellowkahndaorangebookclosed.PNG",label:"Yellow khanda — book closed"},
-    {src:"PunjabiMiniBookMarkInBookBluebaserorangeKhandaBookOpen.PNG",label:"Blue base — in book, open",scale:65},
-    {src:"PunjabiMiniBookMarkInBookOrangeBaseYellowKhandabookopen.PNG",label:"Orange base, yellow khanda — book open"},
-    {src:"PunjabiMiniBookMarkInBookOrangeBaseYellowKhandabookclosed.PNG",label:"Orange base, yellow khanda — book closed"},
-    {src:"PunjabiMiniBookMarkInBookYellowBaseOrangeKhandabookopen.HEIC.PNG",label:"Yellow base, orange khanda — book open",scale:65}
-  ],
-  "khanda-keychain":[
-    {src:"goldkhandamaindisp.PNG",label:"Gold",scale:65},
-    {src:"GoldKhandaOnBag.PNG",label:"Gold — on bag"},
-    {src:"khandaorangemaindisp.PNG",label:"Orange"},
-    {src:"OrangeKhandaOnBag.PNG",label:"Orange — on bag"},
-    {src:"BlueKhandamaindips.PNG",label:"Blue"},
-    {src:"BlueKhandaOnBagCliped.PNG",label:"Blue — on bag"}
-  ],
-  "ura-aara-ttt-keychain":[
-    {src:"TicTacToeMainDisp.PNG",label:"Main display",scale:40},
-    {src:"mainpictureofbluetictactoekeychin.PNG",label:"Blue"},
-    {src:"bluetictactoeclippedonbag.PNG",label:"Blue — on bag"},
-    {src:"Orangekeychinantictactoemaindisp.PNG",label:"Orange"},
-    {src:"OrangeTicTacToeonBag.PNG",label:"Orange — on bag"}
-  ],
-  "ura-aara-ttt-board":[
-    {src:"TicTacToeBoard(NotKeychain)Open.PNG",label:"Board, open"},
-    {src:"TicTacToeWraped(Notkeychain).PNG",label:"Board, wrapped"}
-  ],
-  "panj-pyare-sign":[
-    {src:"PanjPiyarayFront.PNG",label:"Front"},
-    {src:"PanjPiyarayBack.PNG",label:"Back"}
-  ],
-  "cake-topper":[
-    {src:"birthdaycaketopperfront.PNG",label:"Front"},
-    {src:"birthdaycaketopperback.PNG",label:"Back"}
-  ],
-  "star-fidget":[
-    {src:"Starfidgetcoverpic.PNG",label:"Cover"},
-    {src:"StarFidgetPulledUp.PNG",label:"Pulled up"},
-    {src:"starfidgetspiraled.PNG",label:"Spiraled"}
-  ],
-  "spinning-fidget":[
-    {src:"SpinningFidget.PNG",label:"Front"}
-  ],
-  "vaheguru-clicker":[
-    {src:"ClickerTopView.PNG",label:"Top view"},
-    {src:"ClickerSideView.PNG",label:"Side view"}
-  ]
+  "khanda-bookmark":[{src:"bigbookmarkmaindisp.PNG",label:"Front"},{src:"backofbigwoodenbookmark.PNG",label:"Back",scale:55},{src:"bigwoodkhandainbookopenbook.PNG",label:"In book, open",scale:65},{src:"bookmarkwooodmaindispwiththedaygtaygfathe.PNG",label:"With Fateh text",scale:60},{src:"woodbookmarkbigw_odaygtayfathe.PNG",label:"With Fateh text, alt",scale:55},{src:"woodbigbookemarkwoodbaseblackkhanda.PNG",label:"Wood base, black khanda"},{src:"yellowbigbookmarkbasewithblackkhandamaindisp.PNG",label:"Yellow base, black khanda",scale:58}],
+  "mini-bookmark":[{src:"Minibookmarkmaindisp.PNG",label:"Front"},{src:"bluebaseminibookmarkwithorangekhandaminidisppic.PNG",label:"Blue base, orange khanda",scale:55},{src:"Bluebaseorangekhandabookmarkbookclosed.PNG",label:"Blue base — book closed"},{src:"minibookmarkorangemaindisp.PNG",label:"Orange base",scale:55},{src:"orangeminibookmarkwithyellowkhandaontable.PNG",label:"Orange base, yellow khanda",scale:55},{src:"smallyellowkahndaorangebookclosed.PNG",label:"Yellow khanda — book closed"},{src:"PunjabiMiniBookMarkInBookBluebaserorangeKhandaBookOpen.PNG",label:"Blue base — in book, open",scale:65},{src:"PunjabiMiniBookMarkInBookOrangeBaseYellowKhandabookopen.PNG",label:"Orange base, yellow khanda — book open"},{src:"PunjabiMiniBookMarkInBookOrangeBaseYellowKhandabookclosed.PNG",label:"Orange base, yellow khanda — book closed"},{src:"PunjabiMiniBookMarkInBookYellowBaseOrangeKhandabookopen.HEIC.PNG",label:"Yellow base, orange khanda — book open",scale:65}],
+  "khanda-keychain":[{src:"goldkhandamaindisp.PNG",label:"Gold",scale:65},{src:"GoldKhandaOnBag.PNG",label:"Gold — on bag"},{src:"khandaorangemaindisp.PNG",label:"Orange"},{src:"OrangeKhandaOnBag.PNG",label:"Orange — on bag"},{src:"BlueKhandamaindips.PNG",label:"Blue"},{src:"BlueKhandaOnBagCliped.PNG",label:"Blue — on bag"}],
+  "ura-aara-ttt-keychain":[{src:"TicTacToeMainDisp.PNG",label:"Main display",scale:40},{src:"mainpictureofbluetictactoekeychin.PNG",label:"Blue"},{src:"bluetictactoeclippedonbag.PNG",label:"Blue — on bag"},{src:"Orangekeychinantictactoemaindisp.PNG",label:"Orange"},{src:"OrangeTicTacToeonBag.PNG",label:"Orange — on bag"}],
+  "ura-aara-ttt-board":[{src:"TicTacToeBoard(NotKeychain)Open.PNG",label:"Board, open"},{src:"TicTacToeWraped(Notkeychain).PNG",label:"Board, wrapped"}],
+  "panj-pyare-sign":[{src:"PanjPiyarayFront.PNG",label:"Front"},{src:"PanjPiyarayBack.PNG",label:"Back"}],
+  "cake-topper":[{src:"birthdaycaketopperfront.PNG",label:"Front"},{src:"birthdaycaketopperback.PNG",label:"Back"}],
+  "star-fidget":[{src:"Starfidgetcoverpic.PNG",label:"Cover"},{src:"StarFidgetPulledUp.PNG",label:"Pulled up"},{src:"starfidgetspiraled.PNG",label:"Spiraled"}],
+  "spinning-fidget":[{src:"SpinningFidget.PNG",label:"Front"}],
+  "vaheguru-clicker":[{src:"ClickerTopView.PNG",label:"Top view"},{src:"ClickerSideView.PNG",label:"Side view"}],
+  "punjabi-alphabet-puzzle":[{src:"Puzzleassem.PNG",label:"Assembled"},{src:"PuzzleInBox.PNG",label:"In box"}],
+  "mool-mantar-sign":[{src:"MoolMantarWoodCover+allitis.PNG",label:"Front"}],
+  "punjab-sign":[{src:"Punjab.PNG",label:"Front"}],
+  "room-name-sign":[{src:"RoomNameSignFronEnglish.PNG",label:"English front"},{src:"RoomNameSignFrontPunjabi.PNG",label:"Punjabi front"},{src:"RoomNameSignBackEnglishWithMounting.PNG",label:"English back — with mounting"},{src:"RoomNameSignBackPunjabiNoMounting.PNG",label:"Punjabi back — no mounting"}]
 };
 
-const CATEGORIES=[
-  {key:"bookmarks",label:"Bookmarks"},
-  {key:"keychains",label:"Keychains"},
-  {key:"games",label:"Games & Tabletop"},
-  {key:"decor",label:"Decor & Display"},
-  {key:"learning",label:"Learning Sets"},
-  {key:"fidgets",label:"Fidgets & Tools"}
-];
+const CATEGORIES=[{key:"bookmarks",label:"Bookmarks"},{key:"keychains",label:"Keychains"},{key:"games",label:"Games & Tabletop"},{key:"decor",label:"Decor & Display"},{key:"learning",label:"Learning Sets"},{key:"fidgets",label:"Fidgets & Tools"}];
 
 const PRODUCTS=[
-  {num:"001",slug:"khanda-bookmark",icon:"bookmark",category:"bookmarks",name:"Khanda Bookmark",desc:"A full-size bookmark shaped around the Khanda, the emblem of Sikh faith.",price:"$8",colors:["Gold","Silver","Black","Orange","Blue"],fields:[{type:"color",key:"base",label:"Base color"},{type:"color",key:"khanda",label:"Khanda color"},{type:"text-choice",key:"text",label:"Text on bookmark",preset:"Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh"}]},
-  {num:"009",slug:"mini-bookmark",icon:"bookmark",category:"bookmarks",name:"Mini Bookmark",desc:"A smaller, simplified version of the Khanda bookmark, pocket-sized.",price:"$5",colors:["Gold","Silver","Black","Orange","Blue"],fields:[{type:"color",key:"base",label:"Base color"},{type:"color",key:"khanda",label:"Khanda color"}]},
-  {num:"010",slug:"khanda-keychain",icon:"clicker",category:"keychains",name:"Khanda Keychain",desc:"The Khanda emblem, sized and finished for everyday carry on your keys.",price:"$6",colors:["Gold","Silver","Black","Orange","Blue"],fields:[{type:"color",key:"color",label:"Color"}]},
-  {num:"004",slug:"ura-aara-ttt-keychain",icon:"keychain_ttt",category:"keychains",name:"Ura Aara Tic-Tac-Toe — Keychain",desc:"A pocket-size tic-tac-toe set styled with ਉ and ਅ, the first two Gurmukhi letters.",price:"$6",colors:["Blue","Orange"],fields:[{type:"radio",key:"body",label:"Main body color",options:["Blue","Orange"]}]},
-  {num:"005",slug:"ura-aara-ttt-board",icon:"board_ttt",category:"games",name:"Ura Aara Tic-Tac-Toe — Board",desc:"The same Gurmukhi-letter tic-tac-toe set at full size for game nights.",price:"$10",colors:["Blue","Orange","Black","White","Gold"],fields:[{type:"color",key:"base",label:"Board color"},{type:"color",key:"pieces",label:"Pieces color"}]},
-  {num:"002",slug:"panj-pyare-sign",icon:"sign",category:"decor",name:"Panj Pyare Display Sign",desc:"A standing tribute piece honoring the Panj Pyare — the Five Beloved Ones.",price:"$15",colors:["Gold","Silver","Black","White"],fields:[{type:"color",key:"base",label:"Base color"}]},
-  {num:"003",slug:"cake-topper",icon:"topper",category:"decor",name:"Cake Topper",desc:"A custom-cut topper for celebration cakes, sized to order.",price:"$12",colors:["Gold","Silver","Black","White","Pink","Red"],fields:[{type:"color",key:"base",label:"Color"},{type:"text-choice",key:"name",label:"Name on topper",preset:"",freeformOnly:true}]},
-  {num:"006",slug:"ura-aara-letter-set",icon:"letterset",category:"learning",name:"Ura Aara Letter Set",desc:"A boxed set of the Gurmukhi alphabet letters, cut and finished as a full collection.",price:"$20",colors:[],fields:[{type:"note",text:"Colors: Assorted — no color choice for this set."}]},
-  {num:"007",slug:"star-fidget",icon:"star",category:"fidgets",name:"Star Fidget",desc:"A smooth spinning star, weighted for a satisfying spin.",price:"$7",colors:["Red","Orange","Yellow","Green","Blue","Purple","Black","White","Gold"],fields:[{type:"color",key:"color",label:"Color"}]},
+  {num:"001",slug:"khanda-bookmark",icon:"bookmark",category:"bookmarks",name:"Khanda Bookmark",desc:"A full-size bookmark shaped around the Khanda, the emblem of Sikh faith.",price:"$8",colors:["Gold","Yellow","Orange","Blue"],fields:[{type:"color",key:"base",label:"Base color"},{type:"color",key:"khanda",label:"Khanda color"},{type:"text-choice",key:"text",label:"Text on bookmark",preset:"Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh"}]},
+  {num:"009",slug:"mini-bookmark",icon:"bookmark",category:"bookmarks",name:"Mini Bookmark",desc:"A smaller, simplified version of the Khanda bookmark, pocket-sized.",price:"$5",colors:["Gold","Black","Orange","Blue"],fields:[{type:"color",key:"base",label:"Base color"},{type:"color",key:"khanda",label:"Khanda color"}]},
+  {num:"010",slug:"khanda-keychain",icon:"clicker",category:"keychains",name:"Khanda Keychain",desc:"The Khanda emblem, sized and finished for everyday carry on your keys.",price:"$5",colors:["Gold","Yellow","Orange","Blue"],fields:[{type:"color",key:"color",label:"Color"}]},
+  {num:"004",slug:"ura-aara-ttt-keychain",icon:"keychain_ttt",category:"keychains",name:"Ura Aara Tic-Tac-Toe — Keychain",desc:"A pocket-size tic-tac-toe set styled with ਉ and ਅ, the first two Gurmukhi letters.",price:"$10",colors:["Blue","Orange"],fields:[{type:"radio",key:"body",label:"Main body color",options:["Blue","Orange"]}]},
+  {num:"005",slug:"ura-aara-ttt-board",icon:"board_ttt",category:"games",name:"Ura Aara Tic-Tac-Toe — Board",desc:"The same Gurmukhi-letter tic-tac-toe set at full size for game nights.",price:"$15",colors:["Blue","Orange","Black","White","Gold"],fields:[{type:"color",key:"base",label:"Board color"},{type:"color",key:"pieces",label:"Pieces color"}]},
+  {num:"002",slug:"panj-pyare-sign",icon:"sign",category:"decor",name:"Panj Pyare Display Sign",desc:"A standing tribute piece honoring the Panj Pyare — the Five Beloved Ones.",price:"$20",colors:["Gold","Black","White"],fields:[{type:"color",key:"base",label:"Base color"},{type:"color",key:"text",label:"Text color"}]},
+  {num:"003",slug:"cake-topper",icon:"topper",category:"decor",name:"Cake Topper",desc:"A custom-cut topper for celebration cakes, sized to order.",price:"$10",colors:["Gold","Black","White","Pink","Red"],fields:[{type:"color",key:"base",label:"Color"},{type:"text-choice",key:"name",label:"Name on topper",preset:"",freeformOnly:true}]},
+  {num:"006",slug:"ura-aara-letter-set",icon:"letterset",category:"learning",name:"Ura Aara Letter Set",desc:"A boxed set of the Gurmukhi alphabet letters, made and finished as a full collection.",price:"$25",colors:[],fields:[{type:"note",text:"Colors: Assorted — no color choice for this set."}]},
+  {num:"007",slug:"star-fidget",icon:"star",category:"fidgets",name:"Star Fidget",desc:"A smooth spinning star, weighted for a satisfying spin.",price:"$5",colors:["Red","Orange","Yellow","Green","Blue","Purple","Black","White","Gold"],fields:[{type:"color",key:"color",label:"Color"}]},
   {num:"008",slug:"spinning-fidget",icon:"spinner",category:"fidgets",name:"Spinning Fidget",desc:"A classic multi-arm spinner, balanced for smooth, long spins.",price:"$7",colors:["Red","Orange","Yellow","Green","Blue","Purple","Black","White","Gold"],fields:[{type:"color",key:"color1",label:"Color 1"},{type:"color",key:"color2",label:"Color 2"}]},
-  {num:"011",slug:"vaheguru-clicker",icon:"clicker",category:"fidgets",name:"Vaheguru Clicker",desc:"A handheld tally clicker for counting Naam Simran.",price:"$9",colors:["Red","Orange","Yellow","Green","Blue","Purple","Black","White","Gold"],fields:[{type:"color",key:"color1",label:"Color 1"},{type:"color",key:"color2",label:"Color 2"},{type:"text-choice",key:"name",label:"Name on clicker",preset:"",freeformOnly:true}]}
+  {num:"011",slug:"vaheguru-clicker",icon:"clicker",category:"fidgets",name:"Vaheguru Clicker",desc:"A handheld clicker for Naam Simran.",price:"$7",colors:["Red","Orange","Yellow","Green","Blue","Purple","Black","White","Gold"],fields:[{type:"color",key:"color1",label:"Color 1"},{type:"color",key:"color2",label:"Color 2"},{type:"text-choice",key:"name",label:"Name on clicker",preset:"",freeformOnly:true}]},
+  {num:"015",slug:"punjabi-alphabet-puzzle",icon:"board_ttt",category:"games",name:"Punjabi Alphabet Puzzle",desc:"A fun, high-quality puzzle featuring the full Gurmukhi alphabet. Made from durable, high-quality plastic that won't break. Comes in a box for easy storage.",price:"$15",colors:[],fields:[{type:"note",text:"Comes in a box. Made from high-quality, durable plastic."}]},
+  {num:"012",slug:"mool-mantar-sign",icon:"sign",category:"decor",name:"Mool Mantar Display Sign",desc:"A wooden display sign featuring the Mool Mantar — the foundational Sikh prayer.",price:"$25",colors:[],fields:[{type:"note",text:"Made of wood. 11 inches in diameter. Mounting hardware included on back."}]},
+  {num:"013",slug:"punjab-sign",icon:"sign",category:"decor",name:"Punjab Display Sign",desc:"A wooden display sign celebrating Punjab, the land of five rivers and Sikh heritage.",price:"$25",colors:[],fields:[{type:"note",text:"Made of wood. 11 inches in diameter. Mounting hardware included on back."}]},
+  {num:"014",slug:"room-name-sign",icon:"sign",category:"decor",name:"Room Name Sign",desc:"A customizable door or room sign in English or Punjabi, with or without wall mounting.",price:"$20",colors:["Gold","Black","White"],fields:[{type:"radio",key:"language",label:"Language",options:["English","Punjabi"]},{type:"radio",key:"mounting",label:"Mounting",options:["With mounting","No mounting"]},{type:"text-choice",key:"letter",label:"Base letter",preset:"",freeformOnly:true},{type:"text-choice",key:"name",label:"Full name",preset:"",freeformOnly:true}]}
 ];
 
 const lightbox=document.getElementById("lightbox");
@@ -448,63 +404,24 @@ function firstImage(slug){const imgs=IMAGES[slug];return(imgs&&imgs.length)?imgs
 function categoryLabel(key){const cat=CATEGORIES.find(c=>c.key===key);return cat?cat.label:key}
 function productsByCategory(catKey){return PRODUCTS.filter(p=>p.category===catKey)}
 
-function renderCategoryNav(){
-  const nav=document.getElementById("cat-nav");
-  nav.innerHTML="";
-  CATEGORIES.forEach(cat=>{
-    if(!productsByCategory(cat.key).length)return;
-    const pill=document.createElement("a");
-    pill.className="cat-pill";
-    pill.href="#cat-"+cat.key;
-    pill.textContent=cat.label;
-    nav.appendChild(pill);
-  });
-}
+function renderCategoryNav(){const nav=document.getElementById("cat-nav");nav.innerHTML="";CATEGORIES.forEach(cat=>{if(!productsByCategory(cat.key).length)return;const pill=document.createElement("a");pill.className="cat-pill";pill.href="#cat-"+cat.key;pill.textContent=cat.label;nav.appendChild(pill)})}
 
 function buildProductCard(p){
-  const card=document.createElement("button");
-  card.className="card";
+  const card=document.createElement("button");card.className="card";
   const img=firstImage(p.slug);
-  const scale=img&&img.scale?img.scale:85;
-  const thumbContent=img
-    ?`<img src="${img.src}" alt="${p.name}">`
-    :ICONS[p.icon];
-  card.innerHTML=`
-    <div class="thumb"><span class="tag">#${p.num}</span>${thumbContent}</div>
-    <div class="card-body"><h3>${p.name}</h3><p>${p.desc}</p></div>
-    <div class="card-foot"><span class="price">${p.price}</span><span class="num">#${p.num}</span></div>`;
+  const thumbContent=img?`<img src="${img.src}" alt="${p.name}">`:ICONS[p.icon];
+  card.innerHTML=`<div class="thumb"><span class="tag">#${p.num}</span>${thumbContent}</div><div class="card-body"><h3>${p.name}</h3><p>${p.desc}</p></div><div class="card-foot"><span class="price">${p.price}</span><span class="num">#${p.num}</span></div>`;
   const thumbImg=card.querySelector(".thumb img");
-  if(thumbImg){
-    thumbImg.addEventListener("error",()=>{thumbImg.remove();card.querySelector(".thumb").insertAdjacentHTML("beforeend",ICONS[p.icon])},{once:true});
-    thumbImg.addEventListener("click",e=>{e.stopPropagation();openLightbox(img.src,p.name)});
-  }
+  if(thumbImg){thumbImg.addEventListener("error",()=>{thumbImg.remove();card.querySelector(".thumb").insertAdjacentHTML("beforeend",ICONS[p.icon])},{once:true});thumbImg.addEventListener("click",e=>{e.stopPropagation();openLightbox(img.src,p.name)})}
   card.addEventListener("click",()=>{location.hash="#/product/"+p.slug});
   return card;
 }
 
-function renderCatalogSections(){
-  const container=document.getElementById("catalog-sections");
-  container.innerHTML="";
-  CATEGORIES.forEach(cat=>{
-    const items=productsByCategory(cat.key);
-    if(!items.length)return;
-    const section=document.createElement("section");
-    section.className="category-section";
-    section.id="cat-"+cat.key;
-    const heading=document.createElement("div");
-    heading.className="category-heading";
-    heading.innerHTML=`<h3>${cat.label}</h3><span class="count">${items.length} item${items.length>1?"s":""}</span>`;
-    section.appendChild(heading);
-    const grid=document.createElement("div");
-    grid.className="grid";
-    items.forEach(p=>grid.appendChild(buildProductCard(p)));
-    section.appendChild(grid);
-    container.appendChild(section);
-  });
-}
+function renderCatalogSections(){const container=document.getElementById("catalog-sections");container.innerHTML="";CATEGORIES.forEach(cat=>{const items=productsByCategory(cat.key);if(!items.length)return;const section=document.createElement("section");section.className="category-section";section.id="cat-"+cat.key;const heading=document.createElement("div");heading.className="category-heading";heading.innerHTML=`<h3>${cat.label}</h3><span class="count">${items.length} item${items.length>1?"s":""}</span>`;section.appendChild(heading);const grid=document.createElement("div");grid.className="grid";items.forEach(p=>grid.appendChild(buildProductCard(p)));section.appendChild(grid);container.appendChild(section)})}
 
 const catalogView=document.getElementById("catalog-view");
 const productView=document.getElementById("product-view");
+const aboutView=document.getElementById("about-view");
 let currentValues={};
 
 function renderGallery(p){
@@ -518,91 +435,40 @@ function renderGallery(p){
     if(photos.length){
       const photo=photos[i];
       mainIcon.innerHTML="";
-      const frame=document.createElement("div");
-      frame.className="photo-frame";
-      const imgEl=document.createElement("img");
-      imgEl.src=photo.src;
-      imgEl.alt=p.name+" — "+photo.label;
-      imgEl.style.cursor="zoom-in";
+      const frame=document.createElement("div");frame.className="photo-frame";
+      const imgEl=document.createElement("img");imgEl.src=photo.src;imgEl.alt=p.name+" — "+photo.label;imgEl.style.cursor="zoom-in";
       imgEl.addEventListener("click",()=>openLightbox(photo.src,p.name+" — "+photo.label));
       imgEl.addEventListener("error",()=>{mainIcon.innerHTML=ICONS[p.icon]},{once:true});
-      frame.appendChild(imgEl);
-      mainIcon.appendChild(frame);
-      viewLabel.textContent=photo.label;
-      hint.style.display="none";
-    }else{
-      mainIcon.innerHTML=ICONS[p.icon];
-      viewLabel.textContent="Front";
-      hint.style.display="block";
-      hint.textContent="Placeholder — add a photo for this item";
-    }
+      frame.appendChild(imgEl);mainIcon.appendChild(frame);
+      viewLabel.textContent=photo.label;hint.style.display="none";
+    }else{mainIcon.innerHTML=ICONS[p.icon];viewLabel.textContent="Front";hint.style.display="block";hint.textContent="Placeholder — add a photo for this item"}
     thumbs.querySelectorAll(".gallery-thumb").forEach((t,idx)=>t.classList.toggle("active",idx===i));
   }
-  if(photos.length){
-    photos.forEach((photo,i)=>{
-      const thumb=document.createElement("div");
-      thumb.className="gallery-thumb"+(i===0?" active":"");
-      thumb.innerHTML=`<img src="${photo.src}" alt="${photo.label}" onerror="this.remove();"><span>${photo.label}</span>`;
-      thumb.addEventListener("click",()=>setView(i));
-      thumbs.appendChild(thumb);
-    });
-  }else{
-    const thumb=document.createElement("div");
-    thumb.className="gallery-thumb active";
-    thumb.innerHTML=`${ICONS[p.icon]}<span>Front</span>`;
-    thumbs.appendChild(thumb);
-  }
+  if(photos.length){photos.forEach((photo,i)=>{const thumb=document.createElement("div");thumb.className="gallery-thumb"+(i===0?" active":"");thumb.innerHTML=`<img src="${photo.src}" alt="${photo.label}" onerror="this.remove();"><span>${photo.label}</span>`;thumb.addEventListener("click",()=>setView(i));thumbs.appendChild(thumb)})}
+  else{const thumb=document.createElement("div");thumb.className="gallery-thumb active";thumb.innerHTML=`${ICONS[p.icon]}<span>Front</span>`;thumbs.appendChild(thumb)}
   setView(0);
 }
 
-function renderOptionsForm(p){
-  currentValues={};
-  const form=document.getElementById("p-form");
-  form.innerHTML="";
-  p.fields.forEach(f=>{
-    if(f.type==="note")return renderNoteField(form,f);
-    if(f.type==="color")return renderColorField(form,p,f);
-    if(f.type==="radio")return renderRadioField(form,p,f);
-    if(f.type==="text-choice")return renderTextChoiceField(form,p,f);
-  });
-  updateSummary(p);
-}
+function renderOptionsForm(p){currentValues={};const form=document.getElementById("p-form");form.innerHTML="";p.fields.forEach(f=>{if(f.type==="note")return renderNoteField(form,f);if(f.type==="color")return renderColorField(form,p,f);if(f.type==="radio")return renderRadioField(form,p,f);if(f.type==="text-choice")return renderTextChoiceField(form,p,f)});updateSummary(p)}
 
 function renderNoteField(form,f){const div=document.createElement("div");div.className="note-box";div.textContent=f.text;form.appendChild(div)}
 
 function renderColorField(form,p,f){
-  const palette=(p.colors&&p.colors.length)?p.colors:COLORS;
-  currentValues[f.key]=palette[0];
-  const wrap=document.createElement("div");wrap.className="field";
-  wrap.innerHTML=`<label>${f.label}</label>`;
+  const palette=(p.colors&&p.colors.length)?p.colors:COLORS;currentValues[f.key]=palette[0];
+  const wrap=document.createElement("div");wrap.className="field";wrap.innerHTML=`<label>${f.label}</label>`;
   const row=document.createElement("div");row.className="swatch-row";
-  palette.forEach((c,i)=>{
-    const chip=document.createElement("label");
-    chip.className="swatch-chip"+(i===0?" checked":"");
-    chip.innerHTML=`<input type="radio" name="${f.key}_${p.slug}" value="${c}" ${i===0?"checked":""}><span class="dot" style="background:${COLOR_HEX[c]||'#888'}"></span>${c}`;
-    chip.querySelector("input").addEventListener("change",()=>{row.querySelectorAll(".swatch-chip").forEach(x=>x.classList.remove("checked"));chip.classList.add("checked");currentValues[f.key]=c;updateSummary(p)});
-    row.appendChild(chip);
-  });
+  palette.forEach((c,i)=>{const chip=document.createElement("label");chip.className="swatch-chip"+(i===0?" checked":"");chip.innerHTML=`<input type="radio" name="${f.key}_${p.slug}" value="${c}" ${i===0?"checked":""}><span class="dot" style="background:${COLOR_HEX[c]||'#888'}"></span>${c}`;chip.querySelector("input").addEventListener("change",()=>{row.querySelectorAll(".swatch-chip").forEach(x=>x.classList.remove("checked"));chip.classList.add("checked");currentValues[f.key]=c;updateSummary(p)});row.appendChild(chip)});
   wrap.appendChild(row);form.appendChild(wrap);
 }
 
 function renderRadioField(form,p,f){
   currentValues[f.key]=f.options[0];
-  const wrap=document.createElement("div");wrap.className="field";
-  wrap.innerHTML=`<label>${f.label}</label>`;
+  const wrap=document.createElement("div");wrap.className="field";wrap.innerHTML=`<label>${f.label}</label>`;
   const row=document.createElement("div");row.className="swatch-row";
-  f.options.forEach((opt,i)=>{
-    const chip=document.createElement("label");
-    chip.className="swatch-chip"+(i===0?" checked":"");
-    const dot=COLOR_HEX[opt]?`<span class="dot" style="background:${COLOR_HEX[opt]}"></span>`:"";
-    chip.innerHTML=`<input type="radio" name="${f.key}_${p.slug}" value="${opt}" ${i===0?"checked":""}>${dot}${opt}`;
-    chip.querySelector("input").addEventListener("change",()=>{row.querySelectorAll(".swatch-chip").forEach(c=>c.classList.remove("checked"));chip.classList.add("checked");currentValues[f.key]=opt;updateSummary(p)});
-    row.appendChild(chip);
-  });
+  f.options.forEach((opt,i)=>{const chip=document.createElement("label");chip.className="swatch-chip"+(i===0?" checked":"");const dot=COLOR_HEX[opt]?`<span class="dot" style="background:${COLOR_HEX[opt]}"></span>`:"";chip.innerHTML=`<input type="radio" name="${f.key}_${p.slug}" value="${opt}" ${i===0?"checked":""}>${dot}${opt}`;chip.querySelector("input").addEventListener("change",()=>{row.querySelectorAll(".swatch-chip").forEach(c=>c.classList.remove("checked"));chip.classList.add("checked");currentValues[f.key]=opt;updateSummary(p)});row.appendChild(chip)});
   wrap.appendChild(row);form.appendChild(wrap);
 }
 
-/* Gurmukhi fonts available on Google Fonts */
 const GURMUKHI_FONTS=[
   {name:"Mukta Mahee",family:"'Mukta Mahee',sans-serif",sample:"Aa ਅ"},
   {name:"Noto Sans Gurmukhi",family:"'Noto Sans Gurmukhi',sans-serif",sample:"Aa ਅ"},
@@ -621,194 +487,68 @@ const GURMUKHI_KEYS=[
 ];
 
 function renderTextChoiceField(form,p,f){
-  const wrap=document.createElement("div");wrap.className="field";
-  wrap.innerHTML=`<label>${f.label}</label>`;
+  const wrap=document.createElement("div");wrap.className="field";wrap.innerHTML=`<label>${f.label}</label>`;
   const row=document.createElement("div");row.className="radio-row";
   const choices=f.freeformOnly?[["none","No name"],["custom","Write a name"]]:[["none","Leave blank"],["preset",f.preset],["custom","Write my own text"]];
 
-  /* ── Font selector ── */
-  const fontWrap=document.createElement("div");fontWrap.className="font-selector";
-  fontWrap.innerHTML=`<label>Font style</label>`;
+  const fontWrap=document.createElement("div");fontWrap.className="font-selector";fontWrap.innerHTML=`<label>Font style</label>`;
   const fontRow=document.createElement("div");fontRow.className="font-options";
   let selectedFont=GURMUKHI_FONTS[0];
-  GURMUKHI_FONTS.forEach((ft,i)=>{
-    const chip=document.createElement("label");
-    chip.className="font-chip"+(i===0?" checked":"");
-    chip.innerHTML=`<input type="radio" name="${f.key}_font" value="${ft.name}" ${i===0?"checked":""}><span style="font-family:${ft.family}">${ft.name}</span><span class="font-sample" style="font-family:${ft.family}">Waheguru ਵਾਹਿਗੁਰੂ</span>`;
-    chip.addEventListener("click",()=>{
-      fontRow.querySelectorAll(".font-chip").forEach(c=>c.classList.remove("checked"));
-      chip.classList.add("checked");
-      selectedFont=ft;
-      currentValues[f.key+"_font"]=ft.name;
-      updatePreview();
-      updateSummary(p);
-    });
-    fontRow.appendChild(chip);
-  });
+  GURMUKHI_FONTS.forEach((ft,i)=>{const chip=document.createElement("label");chip.className="font-chip"+(i===0?" checked":"");chip.innerHTML=`<input type="radio" name="${f.key}_font" value="${ft.name}" ${i===0?"checked":""}><span style="font-family:${ft.family}">${ft.name}</span><span class="font-sample" style="font-family:${ft.family}">Waheguru ਵਾਹਿਗੁਰੂ</span>`;chip.addEventListener("click",()=>{fontRow.querySelectorAll(".font-chip").forEach(c=>c.classList.remove("checked"));chip.classList.add("checked");selectedFont=ft;currentValues[f.key+"_font"]=ft.name;updatePreview();updateSummary(p)});fontRow.appendChild(chip)});
   fontWrap.appendChild(fontRow);
 
-  /* ── Live preview ── */
-  const previewBox=document.createElement("div");previewBox.className="text-preview-box";
-  previewBox.innerHTML=`<div class="text-preview-label">Preview</div><div class="text-preview-value empty">Type or tap characters below</div>`;
+  const previewBox=document.createElement("div");previewBox.className="text-preview-box";previewBox.innerHTML=`<div class="text-preview-label">Preview</div><div class="text-preview-value empty">Type or tap characters below</div>`;
 
-  /* ── Text input ── */
-  const textInput=document.createElement("input");
-  textInput.type="text";textInput.placeholder=f.freeformOnly?"Name to write":"Your custom text";
-  textInput.style.width="100%";textInput.maxLength=10;
+  const textInput=document.createElement("input");textInput.type="text";textInput.placeholder=f.freeformOnly?"Name to write":"Your custom text";textInput.style.width="100%";textInput.maxLength=10;
   const charCount=document.createElement("div");charCount.style.cssText="font-size:11px;color:var(--text-muted);margin-top:4px;text-align:right";charCount.textContent="0 / 10 characters";
 
-  /* ── Punjabi keyboard toggle ── */
   const kbSection=document.createElement("div");kbSection.className="punjabi-kb";
-  const kbHeader=document.createElement("div");kbHeader.className="punjabi-kb-header";
-  kbHeader.innerHTML=`<span>Punjabi keyboard</span>`;
+  const kbHeader=document.createElement("div");kbHeader.className="punjabi-kb-header";kbHeader.innerHTML=`<span>Punjabi keyboard</span>`;
   const kbToggle=document.createElement("button");kbToggle.type="button";kbToggle.className="punjabi-kb-toggle";kbToggle.textContent="Show keyboard";
   kbHeader.appendChild(kbToggle);
-
   const kbGrid=document.createElement("div");kbGrid.className="punjabi-kb-grid";
 
-  GURMUKHI_KEYS.forEach(section=>{
-    const label=document.createElement("div");label.className="kb-row-label";label.textContent=section.label;
-    kbGrid.appendChild(label);
-    section.chars.forEach(ch=>{
-      const key=document.createElement("button");key.type="button";key.className="kb-key";key.textContent=ch;
-      key.addEventListener("click",e=>{
-        e.preventDefault();
-        if(textInput.value.length>=10)return;
-        const pos=textInput.selectionStart||textInput.value.length;
-        textInput.value=textInput.value.slice(0,pos)+ch+textInput.value.slice(pos);
-        textInput.focus();textInput.setSelectionRange(pos+ch.length,pos+ch.length);
-        currentValues[f.key+"_text"]=textInput.value;
-        currentValues[f.key]=textInput.value||"(custom — not typed yet)";
-        charCount.textContent=textInput.value.length+" / 10 characters";
-        updatePreview();
-        updateSummary(p);
-      });
-      kbGrid.appendChild(key);
-    });
-  });
+  GURMUKHI_KEYS.forEach(section=>{const label=document.createElement("div");label.className="kb-row-label";label.textContent=section.label;kbGrid.appendChild(label);section.chars.forEach(ch=>{const key=document.createElement("button");key.type="button";key.className="kb-key";key.textContent=ch;key.addEventListener("click",e=>{e.preventDefault();if(textInput.value.length>=10)return;const pos=textInput.selectionStart||textInput.value.length;textInput.value=textInput.value.slice(0,pos)+ch+textInput.value.slice(pos);textInput.focus();textInput.setSelectionRange(pos+ch.length,pos+ch.length);currentValues[f.key+"_text"]=textInput.value;currentValues[f.key]=textInput.value;charCount.textContent=textInput.value.length+" / 10 characters";updatePreview();updateSummary(p)});kbGrid.appendChild(key)})});
 
-  /* space + backspace row */
   const spaceKey=document.createElement("button");spaceKey.type="button";spaceKey.className="kb-key space";spaceKey.textContent="Space";
   spaceKey.addEventListener("click",e=>{e.preventDefault();if(textInput.value.length>=10)return;const pos=textInput.selectionStart||textInput.value.length;textInput.value=textInput.value.slice(0,pos)+" "+textInput.value.slice(pos);textInput.focus();textInput.setSelectionRange(pos+1,pos+1);currentValues[f.key+"_text"]=textInput.value;currentValues[f.key]=textInput.value;charCount.textContent=textInput.value.length+" / 10 characters";updatePreview();updateSummary(p)});
   kbGrid.appendChild(spaceKey);
   const backKey=document.createElement("button");backKey.type="button";backKey.className="kb-key backspace";backKey.textContent="⌫ Back";
   backKey.addEventListener("click",e=>{e.preventDefault();const pos=textInput.selectionStart||textInput.value.length;if(pos>0){textInput.value=textInput.value.slice(0,pos-1)+textInput.value.slice(pos);textInput.focus();textInput.setSelectionRange(pos-1,pos-1);currentValues[f.key+"_text"]=textInput.value;currentValues[f.key]=textInput.value||"(custom — not typed yet)";charCount.textContent=textInput.value.length+" / 10 characters";updatePreview();updateSummary(p)}});
   kbGrid.appendChild(backKey);
-
   const kbHint=document.createElement("div");kbHint.className="kb-hint";kbHint.textContent="Use this to type Punjabi/Gurmukhi characters directly";
-
   kbSection.appendChild(kbHeader);kbSection.appendChild(kbGrid);kbSection.appendChild(kbHint);
 
-  let kbOpen=false;
-  kbToggle.addEventListener("click",()=>{
-    kbOpen=!kbOpen;
-    kbGrid.classList.toggle("open",kbOpen);
-    kbToggle.textContent=kbOpen?"Hide keyboard":"Show keyboard";
-  });
+  let kbOpen=false;kbToggle.addEventListener("click",()=>{kbOpen=!kbOpen;kbGrid.classList.toggle("open",kbOpen);kbToggle.textContent=kbOpen?"Hide keyboard":"Show keyboard"});
 
-  /* ── Preview update ── */
-  function updatePreview(){
-    const val=textInput.value.trim();
-    const valEl=previewBox.querySelector(".text-preview-value");
-    if(val){
-      previewBox.classList.add("has-text");
-      valEl.className="text-preview-value";
-      valEl.style.fontFamily=selectedFont.family;
-      valEl.textContent=val;
-    }else{
-      previewBox.classList.remove("has-text");
-      valEl.className="text-preview-value empty";
-      valEl.style.fontFamily="";
-      valEl.textContent="Type or tap characters below";
-    }
-  }
+  function updatePreview(){const val=textInput.value.trim();const valEl=previewBox.querySelector(".text-preview-value");if(val){previewBox.classList.add("has-text");valEl.className="text-preview-value";valEl.style.fontFamily=selectedFont.family;valEl.textContent=val}else{previewBox.classList.remove("has-text");valEl.className="text-preview-value empty";valEl.style.fontFamily="";valEl.textContent="Type or tap characters below"}}
 
-  /* ── Store initial value key ── */
-  currentValues[f.key+"_text"]="None";
-  currentValues[f.key+"_font"]=GURMUKHI_FONTS[0].name;
+  currentValues[f.key+"_text"]="None";currentValues[f.key+"_font"]=GURMUKHI_FONTS[0].name;
 
-  /* ── Choice chips (None / Preset / Custom) ── */
-  choices.forEach(([val,label],i)=>{
-    const chip=document.createElement("label");
-    chip.className="radio-chip"+(i===0?" checked":"");
-    chip.innerHTML=`<input type="radio" name="${f.key}" value="${val}" ${i===0?"checked":""}>${val==="preset"?"Fateh phrase":label}`;
-    chip.querySelector("input").addEventListener("change",()=>{
-      row.querySelectorAll(".radio-chip").forEach(c=>c.classList.remove("checked"));
-      chip.classList.add("checked");
-      const customBlock=[textInput,fontWrap,previewBox,kbSection];
-      if(val==="custom"){
-        customBlock.forEach(el=>el.style.display="");
-        currentValues[f.key]=textInput.value||"(custom — not typed yet)";
-      }else if(val==="preset"){
-        customBlock.forEach(el=>el.style.display="none");
-        currentValues[f.key]=f.preset;
-      }else{
-        customBlock.forEach(el=>el.style.display="none");
-        currentValues[f.key]="None";
-      }
-      updateSummary(p);
-    });
-    row.appendChild(chip);
-  });
+  choices.forEach(([val,label],i)=>{const chip=document.createElement("label");chip.className="radio-chip"+(i===0?" checked":"");chip.innerHTML=`<input type="radio" name="${f.key}" value="${val}" ${i===0?"checked":""}>${val==="preset"?"Fateh phrase":label}`;chip.querySelector("input").addEventListener("change",()=>{row.querySelectorAll(".radio-chip").forEach(c=>c.classList.remove("checked"));chip.classList.add("checked");const customBlock=[textInput,fontWrap,previewBox,kbSection];if(val==="custom"){customBlock.forEach(el=>el.style.display="");currentValues[f.key]=textInput.value||"(custom — not typed yet)"}else if(val==="preset"){customBlock.forEach(el=>el.style.display="none");currentValues[f.key]=f.preset}else{customBlock.forEach(el=>el.style.display="none");currentValues[f.key]="None"}updateSummary(p)});row.appendChild(chip)});
 
-  textInput.addEventListener("input",()=>{
-    currentValues[f.key]=textInput.value||"(custom — not typed yet)";
-    charCount.textContent=textInput.value.length+" / 10 characters";
-    updatePreview();
-    updateSummary(p);
-  });
+  textInput.addEventListener("input",()=>{currentValues[f.key]=textInput.value||"(custom — not typed yet)";charCount.textContent=textInput.value.length+" / 10 characters";updatePreview();updateSummary(p)});
 
-  /* Hide custom block initially (unless "custom" is default) */
-  const isCustomInit=choices[0][0]==="custom";
-  [textInput,fontWrap,previewBox,kbSection].forEach(el=>el.style.display=isCustomInit?"":"none");
+  const isCustomInit=choices[0][0]==="custom";[textInput,fontWrap,previewBox,kbSection].forEach(el=>el.style.display=isCustomInit?"":"none");
 
-  wrap.appendChild(row);
-  wrap.appendChild(fontWrap);
-  wrap.appendChild(previewBox);
-  wrap.appendChild(textInput);
-  wrap.appendChild(charCount);
-  wrap.appendChild(kbSection);
-  form.appendChild(wrap);
+  wrap.appendChild(row);wrap.appendChild(fontWrap);wrap.appendChild(previewBox);wrap.appendChild(textInput);wrap.appendChild(charCount);wrap.appendChild(kbSection);form.appendChild(wrap);
 }
 
 function fieldLabelMap(p){const map={};p.fields.forEach(f=>{if(f.key)map[f.key]=f.label;map[f.key+"_font"]="Font style"});return map}
 function fieldColorMap(p){const map={};p.fields.forEach(f=>{if(f.key&&(f.type==="color"||f.type==="radio"))map[f.key]=true});return map}
-function fieldIsFont(k){return k.endsWith("_font")}
 
 function updateSummary(p){
   const labels=fieldLabelMap(p);const colorFields=fieldColorMap(p);
   const summaryDiv=document.getElementById("p-summary");summaryDiv.innerHTML="";
-  const line=(label,val,isColor)=>{
-    const d=document.createElement("div");d.className="summary-line";
-    const dot=(isColor&&COLOR_HEX[val])?`<span class="dot" style="background:${COLOR_HEX[val]}"></span>`:"";
-    d.innerHTML=`<span>${label}</span><span>${dot}${val}</span>`;
-    summaryDiv.appendChild(d);
-  };
+  const line=(label,val,isColor)=>{const d=document.createElement("div");d.className="summary-line";const dot=(isColor&&COLOR_HEX[val])?`<span class="dot" style="background:${COLOR_HEX[val]}"></span>`:"";d.innerHTML=`<span>${label}</span><span>${dot}${val}</span>`;summaryDiv.appendChild(d)};
   line("Item",`#${p.num} — ${p.name}`,false);
-  Object.keys(currentValues).forEach(k=>{
-    if(k.endsWith("_text"))return;
-    if(k.endsWith("_font")&&currentValues[k]==="None")return;
-    if(currentValues[k]!=="None")line(labels[k]||k,currentValues[k],!!colorFields[k]);
-  });
+  Object.keys(currentValues).forEach(k=>{if(k.endsWith("_text"))return;if(k.endsWith("_font")&&currentValues[k]==="None")return;if(currentValues[k]!=="None")line(labels[k]||k,currentValues[k],!!colorFields[k])});
   document.getElementById("copied-msg").style.display="none";
 }
 
-function buildOrderText(p){
-  const labels=fieldLabelMap(p);
-  let lines=[`Order request — #${p.num} ${p.name}`];
-  Object.keys(currentValues).forEach(k=>{lines.push(`${labels[k]||k}: ${currentValues[k]}`)});
-  return lines.join("\n");
-}
+function buildOrderText(p){const labels=fieldLabelMap(p);let lines=[`Order request — #${p.num} ${p.name}`];Object.keys(currentValues).forEach(k=>{if(k.endsWith("_text"))return;if(k.endsWith("_font")&&currentValues[k]==="None")return;if(currentValues[k]!=="None")lines.push(`${labels[k]||k}: ${currentValues[k]}`)});return lines.join("\n")}
 
-function renderProduct(p){
-  document.getElementById("p-tag").textContent="#"+p.num;
-  document.getElementById("p-num").textContent=p.num;
-  document.getElementById("p-name").textContent=p.name;
-  document.getElementById("p-desc").textContent=p.desc;
-  document.getElementById("p-price").textContent=p.price;
-  document.getElementById("p-category").textContent=categoryLabel(p.category);
-  renderGallery(p);renderOptionsForm(p);
-}
+function renderProduct(p){document.getElementById("p-tag").textContent="#"+p.num;document.getElementById("p-num").textContent=p.num;document.getElementById("p-name").textContent=p.name;document.getElementById("p-desc").textContent=p.desc;document.getElementById("p-price").textContent=p.price;document.getElementById("p-category").textContent=categoryLabel(p.category);renderGallery(p);renderOptionsForm(p)}
 
 function currentProduct(){const slug=location.hash.split("#/product/")[1];return PRODUCTS.find(x=>x.slug===slug)}
 
@@ -817,8 +557,10 @@ document.getElementById("copy-order-btn").addEventListener("click",()=>{const p=
 
 function route(){
   const hash=location.hash;
-  if(hash.startsWith("#/product/")){const p=currentProduct();if(p){renderProduct(p);catalogView.classList.remove("active");productView.classList.add("active");window.scrollTo(0,0);return}}
-  catalogView.classList.add("active");productView.classList.remove("active");
+  catalogView.classList.remove("active");productView.classList.remove("active");aboutView.classList.remove("active");
+  if(hash.startsWith("#/product/")){const p=currentProduct();if(p){renderProduct(p);productView.classList.add("active");window.scrollTo(0,0);return}}
+  if(hash==="#/about"){aboutView.classList.add("active");window.scrollTo(0,0);return}
+  catalogView.classList.add("active");
 }
 window.addEventListener("hashchange",route);
 
