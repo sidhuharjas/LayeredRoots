@@ -362,11 +362,14 @@ const IMAGES={
   "ura-aara-ttt-keychain":[{src:"TicTacToeMainDisp.PNG",label:"Main display",scale:40},{src:"mainpictureofbluetictactoekeychin.PNG",label:"Blue"},{src:"bluetictactoeclippedonbag.PNG",label:"Blue — on bag"},{src:"Orangekeychinantictactoemaindisp.PNG",label:"Orange"},{src:"OrangeTicTacToeonBag.PNG",label:"Orange — on bag"}],
   "ura-aara-ttt-board":[{src:"TicTacToeBoard(NotKeychain)Open.PNG",label:"Board, open"},{src:"TicTacToeWraped(Notkeychain).PNG",label:"Board, wrapped"}],
   "panj-pyare-sign":[{src:"PanjPiyarayFront.PNG",label:"Front"},{src:"PanjPiyarayBack.PNG",label:"Back"}],
+  "ura-aara-letter-set":[{src:"uraaraalphabetregular.PNG",label:"Full set"}],
   "cake-topper":[{src:"birthdaycaketopperfront.PNG",label:"Front"},{src:"birthdaycaketopperback.PNG",label:"Back"}],
   "star-fidget":[{src:"Starfidgetcoverpic.PNG",label:"Cover"},{src:"StarFidgetPulledUp.PNG",label:"Pulled up"},{src:"starfidgetspiraled.PNG",label:"Spiraled"}],
   "spinning-fidget":[{src:"SpinningFidget.PNG",label:"Front"}],
+  "passthrough-fidget":[{src:"covpickpassthrough fidget.PNG",label:"Front"},{src:"impossiblepassthroughbothspiralsout.PNG",label:"Both spirals out"},{src:"ImpposiblePassthroughopposite.PNG",label:"Opposite"}],
   "vaheguru-clicker":[{src:"ClickerTopView.PNG",label:"Top view"},{src:"ClickerSideView.PNG",label:"Side view"}],
   "punjabi-alphabet-puzzle":[{src:"Puzzleassem.PNG",label:"Assembled"},{src:"PuzzleInBox.PNG",label:"In box"}],
+  "mega-set-punjabi":[{src:"MegaSetPunjabi.PNG",label:"Full set"}],
   "mool-mantar-sign":[{src:"MoolMantarWoodCover+allitis.PNG",label:"Front"}],
   "punjab-sign":[{src:"Punjab.PNG",label:"Front"}],
   "room-name-sign":[{src:"RoomNameSignFronEnglish.PNG",label:"English front"},{src:"RoomNameSignFrontPunjabi.PNG",label:"Punjabi front"},{src:"RoomNameSignBackEnglishWithMounting.PNG",label:"English back — with mounting"},{src:"RoomNameSignBackPunjabiNoMounting.PNG",label:"Punjabi back — no mounting"}]
@@ -375,30 +378,29 @@ const IMAGES={
 const CATEGORIES=[{key:"bookmarks",label:"Bookmarks"},{key:"keychains",label:"Keychains"},{key:"games",label:"Games & Tabletop"},{key:"decor",label:"Decor & Display"},{key:"learning",label:"Learning Sets"},{key:"fidgets",label:"Fidgets & Tools"}];
 
 const PRODUCTS=[
-  {num:"001",slug:"khanda-bookmark",icon:"bookmark",category:"bookmarks",name:"Khanda Bookmark",desc:"A full-size bookmark shaped around the Khanda, the emblem of Sikh faith.",price:"$8",colors:["Gold","Yellow","Orange","Blue"],fields:[{type:"color",key:"base",label:"Base color"},{type:"color",key:"khanda",label:"Khanda color"},{type:"text-choice",key:"text",label:"Text on bookmark",preset:"Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh"}]},
+  {num:"001",slug:"khanda-bookmark",icon:"bookmark",category:"bookmarks",name:"Khanda Bookmark",desc:"A full-size bookmark shaped around the Khanda, the emblem of Sikh faith.",price:"$7",colors:["Gold","Yellow","Orange","Blue"],fields:[{type:"color",key:"base",label:"Base color"},{type:"color",key:"khanda",label:"Khanda color"},{type:"text-choice",key:"text",label:"Text on bookmark",preset:"Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh"}]},
   {num:"009",slug:"mini-bookmark",icon:"bookmark",category:"bookmarks",name:"Mini Bookmark",desc:"A smaller, simplified version of the Khanda bookmark, pocket-sized.",price:"$5",colors:["Gold","Black","Orange","Blue"],fields:[{type:"color",key:"base",label:"Base color"},{type:"color",key:"khanda",label:"Khanda color"}]},
   {num:"010",slug:"khanda-keychain",icon:"clicker",category:"keychains",name:"Khanda Keychain",desc:"The Khanda emblem, sized and finished for everyday carry on your keys.",price:"$5",colors:["Gold","Yellow","Orange","Blue"],fields:[{type:"color",key:"color",label:"Color"}]},
   {num:"004",slug:"ura-aara-ttt-keychain",icon:"keychain_ttt",category:"keychains",name:"Ura Aara Tic-Tac-Toe — Keychain",desc:"A pocket-size tic-tac-toe set styled with ਉ and ਅ, the first two Gurmukhi letters.",price:"$10",colors:["Blue","Orange"],fields:[{type:"radio",key:"body",label:"Main body color",options:["Blue","Orange"]}]},
   {num:"005",slug:"ura-aara-ttt-board",icon:"board_ttt",category:"games",name:"Ura Aara Tic-Tac-Toe — Board",desc:"The same Gurmukhi-letter tic-tac-toe set at full size for game nights.",price:"$15",colors:["Blue","Orange","Black","White","Gold"],fields:[{type:"color",key:"base",label:"Board color"},{type:"color",key:"pieces",label:"Pieces color"}]},
-  {num:"002",slug:"panj-pyare-sign",icon:"sign",category:"decor",name:"Panj Pyare Display Sign",desc:"A standing tribute piece honoring the Panj Pyare — the Five Beloved Ones.",price:"$20",colors:["Gold","Black","White"],fields:[{type:"color",key:"base",label:"Base color"},{type:"color",key:"text",label:"Text color"}]},
+  {num:"002",slug:"panj-pyare-sign",icon:"sign",category:"decor",name:"Panj Pyare Display Sign",desc:"A standing tribute piece honoring the Panj Pyare — the Five Beloved Ones.",price:"$25",colors:["Gold","Black","White"],fields:[{type:"color",key:"base",label:"Base color"},{type:"color",key:"text",label:"Text color"}]},
   {num:"003",slug:"cake-topper",icon:"topper",category:"decor",name:"Cake Topper",desc:"A custom-cut topper for celebration cakes, sized to order.",price:"$10",colors:["Gold","Black","White","Pink","Red"],fields:[{type:"color",key:"base",label:"Color"},{type:"text-choice",key:"name",label:"Name on topper",preset:"",freeformOnly:true}]},
   {num:"006",slug:"ura-aara-letter-set",icon:"letterset",category:"learning",name:"Ura Aara Letter Set",desc:"A boxed set of the Gurmukhi alphabet letters, made and finished as a full collection.",price:"$25",colors:[],fields:[{type:"note",text:"Colors: Assorted — no color choice for this set."}]},
   {num:"007",slug:"star-fidget",icon:"star",category:"fidgets",name:"Star Fidget",desc:"A smooth spinning star, weighted for a satisfying spin.",price:"$5",colors:["Red","Orange","Yellow","Green","Blue","Purple","Black","White","Gold"],fields:[{type:"color",key:"color",label:"Color"}]},
   {num:"008",slug:"spinning-fidget",icon:"spinner",category:"fidgets",name:"Spinning Fidget",desc:"A classic multi-arm spinner, balanced for smooth, long spins.",price:"$7",colors:["Red","Orange","Yellow","Green","Blue","Purple","Black","White","Gold"],fields:[{type:"color",key:"color1",label:"Color 1"},{type:"color",key:"color2",label:"Color 2"}]},
-  {num:"011",slug:"vaheguru-clicker",icon:"clicker",category:"fidgets",name:"Vaheguru Clicker",desc:"A handheld clicker for Naam Simran.",price:"$7",colors:["Red","Orange","Yellow","Green","Blue","Purple","Black","White","Gold"],fields:[{type:"color",key:"color1",label:"Color 1"},{type:"color",key:"color2",label:"Color 2"},{type:"text-choice",key:"name",label:"Name on clicker",preset:"",freeformOnly:true}]},
+  {num:"017",slug:"passthrough-fidget",icon:"star",category:"fidgets",name:"Passthrough Fidget",desc:"An impossible passthrough fidget — looks like it shouldn't work, but it does.",price:"$6",colors:["Red","Orange","Yellow","Green","Blue","Purple","Black","White","Gold"],fields:[{type:"color",key:"color",label:"Color"}]},
+  {num:"011",slug:"vaheguru-clicker",icon:"clicker",category:"fidgets",name:"Vaheguru Clicker",desc:"A handheld clicker for Naam Simran.",price:"$5",colors:["Red","Orange","Yellow","Green","Blue","Purple","Black","White","Gold"],fields:[{type:"color",key:"color1",label:"Color 1"},{type:"color",key:"color2",label:"Color 2"},{type:"text-choice",key:"name",label:"Name on clicker",preset:"",freeformOnly:true}]},
   {num:"015",slug:"punjabi-alphabet-puzzle",icon:"board_ttt",category:"games",name:"Punjabi Alphabet Puzzle",desc:"A fun, high-quality puzzle featuring the full Gurmukhi alphabet. Made from durable, high-quality plastic that won't break. Comes in a box for easy storage.",price:"$15",colors:[],fields:[{type:"note",text:"Comes in a box. Made from high-quality, durable plastic."}]},
+  {num:"016",slug:"mega-set-punjabi",icon:"letterset",category:"learning",name:"Mega Set — Punjabi",desc:"1 set Muharni + 1 set Punjabi numbers + 1 set Ura Aara. Everything you need to start learning Gurmukhi.",price:"$40",colors:[],fields:[{type:"note",text:"Colors: Assorted. Comes in a box."}]},
   {num:"012",slug:"mool-mantar-sign",icon:"sign",category:"decor",name:"Mool Mantar Display Sign",desc:"A wooden display sign featuring the Mool Mantar — the foundational Sikh prayer.",price:"$25",colors:[],fields:[{type:"note",text:"Made of wood. 11 inches in diameter. Mounting hardware included on back."}]},
   {num:"013",slug:"punjab-sign",icon:"sign",category:"decor",name:"Punjab Display Sign",desc:"A wooden display sign celebrating Punjab, the land of five rivers and Sikh heritage.",price:"$25",colors:[],fields:[{type:"note",text:"Made of wood. 11 inches in diameter. Mounting hardware included on back."}]},
-  {num:"014",slug:"room-name-sign",icon:"sign",category:"decor",name:"Room Name Sign",desc:"A customizable door or room sign in English or Punjabi, with or without wall mounting.",price:"$20",colors:["Gold","Black","White"],fields:[{type:"radio",key:"language",label:"Language",options:["English","Punjabi"]},{type:"radio",key:"mounting",label:"Mounting",options:["With mounting","No mounting"]},{type:"text-choice",key:"letter",label:"Base letter",preset:"",freeformOnly:true},{type:"text-choice",key:"name",label:"Full name",preset:"",freeformOnly:true}]}
+  {num:"014",slug:"room-name-sign",icon:"sign",category:"decor",name:"Room Name Sign",desc:"A customizable door or room sign in English or Punjabi, with or without wall mounting.",price:"$25",colors:["Gold","Black","White"],fields:[{type:"radio",key:"language",label:"Language",options:["English","Punjabi"]},{type:"radio",key:"mounting",label:"Mounting",options:["With mounting","No mounting"]},{type:"text-choice",key:"letter",label:"Base letter",preset:"",freeformOnly:true},{type:"text-choice",key:"name",label:"Full name",preset:"",freeformOnly:true}]}
 ];
 
 const lightbox=document.getElementById("lightbox");
 const lightboxImg=document.getElementById("lightbox-img");
-function openLightbox(src,alt){lightboxImg.src=src;lightboxImg.alt=alt||"";lightbox.classList.add("active")}
-function closeLightbox(){lightbox.classList.remove("active");lightboxImg.src=""}
-lightbox.addEventListener("click",closeLightbox);
-document.getElementById("lightbox-close").addEventListener("click",e=>{e.stopPropagation();closeLightbox()});
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeLightbox()});
+function openLightbox(src,alt){}
+function closeLightbox(){}
 
 function firstImage(slug){const imgs=IMAGES[slug];return(imgs&&imgs.length)?imgs[0]:null}
 function categoryLabel(key){const cat=CATEGORIES.find(c=>c.key===key);return cat?cat.label:key}
@@ -412,7 +414,7 @@ function buildProductCard(p){
   const thumbContent=img?`<img src="${img.src}" alt="${p.name}">`:ICONS[p.icon];
   card.innerHTML=`<div class="thumb"><span class="tag">#${p.num}</span>${thumbContent}</div><div class="card-body"><h3>${p.name}</h3><p>${p.desc}</p></div><div class="card-foot"><span class="price">${p.price}</span><span class="num">#${p.num}</span></div>`;
   const thumbImg=card.querySelector(".thumb img");
-  if(thumbImg){thumbImg.addEventListener("error",()=>{thumbImg.remove();card.querySelector(".thumb").insertAdjacentHTML("beforeend",ICONS[p.icon])},{once:true});thumbImg.addEventListener("click",e=>{e.stopPropagation();openLightbox(img.src,p.name)})}
+  if(thumbImg){thumbImg.addEventListener("error",()=>{thumbImg.remove();card.querySelector(".thumb").insertAdjacentHTML("beforeend",ICONS[p.icon])},{once:true})}
   card.addEventListener("click",()=>{location.hash="#/product/"+p.slug});
   return card;
 }
@@ -437,7 +439,7 @@ function renderGallery(p){
       mainIcon.innerHTML="";
       const frame=document.createElement("div");frame.className="photo-frame";
       const imgEl=document.createElement("img");imgEl.src=photo.src;imgEl.alt=p.name+" — "+photo.label;imgEl.style.cursor="zoom-in";
-      imgEl.addEventListener("click",()=>openLightbox(photo.src,p.name+" — "+photo.label));
+
       imgEl.addEventListener("error",()=>{mainIcon.innerHTML=ICONS[p.icon]},{once:true});
       frame.appendChild(imgEl);mainIcon.appendChild(frame);
       viewLabel.textContent=photo.label;hint.style.display="none";
